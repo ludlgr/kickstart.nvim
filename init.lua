@@ -205,6 +205,9 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 -- vim.keymap.set("n", "<C-S-j>", "<C-w>J", { desc = "Move window to the lower" })
 -- vim.keymap.set("n", "<C-S-k>", "<C-w>K", { desc = "Move window to the upper" })
 
+-- Disabling native 's' key binding for an easier use of mini.surround
+vim.keymap.set({ 'n', 'x' }, 's', '<Nop>')
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
